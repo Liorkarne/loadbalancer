@@ -23,7 +23,7 @@ if __name__ == '__main__':
     s= socket.socket()
     s.bind((HOST,PORT))
     while True:
-        s.listen()
+        s.listen(1)
         conn , addr = s.accept()
         data= conn.recv(2).decode()
 
